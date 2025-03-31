@@ -8,7 +8,7 @@ export default function SuccessPage() {
         <div className="min-h-screen flex items-center justify-center bg-gray-50">
             <div className="w-full max-w-md bg-white rounded-lg shadow-sm p-8 text-center">
                 <div className="flex justify-center mb-4">
-                    <Image src="/logo/logo.png" width={150} height={50} alt="Logo" />
+                    <Image src="/logo/logo.png" width={150} height={50} alt="Logo" className="priority" loading="lazy" />
                 </div>
                 <div className="flex justify-center mb-6">
                     <CheckCircle2 className="h-24 w-24 text-green-500" />

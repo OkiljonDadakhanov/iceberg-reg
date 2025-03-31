@@ -151,8 +151,9 @@ export default function RegistrationForm() {
         }
     }
 
-    const TELEGRAM_BOT_TOKEN = "7176468132:AAHhV4VqPYAOeoBGOEzn_LfIXNqHCMu5KXA"
-    const TELEGRAM_CHAT_ID = "-1002334606268" 
+    const TELEGRAM_BOT_TOKEN = process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN
+    const TELEGRAM_CHAT_ID = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID
+
 
     const sendToTelegram = async (data: typeof formData) => {
         const message = `
